@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Module02Exercise01.View.OfflinePage"
+             Title="OfflinePage"
+             BackgroundColor="#eeeeea">
+    <VerticalStackLayout VerticalOptions="CenterAndExpand" Padding="20" Spacing="10">
+        <Label 
+            Text="Offline Page"
+            FontAttributes="Bold"
+            FontFamily="Impact"
+            FontSize="25" 
+            HorizontalOptions="Center" />
+
+        <Label 
+            Text="Oh, snap! Looks like you have no internet connection!"
+            FontFamily="Arial"
+            FontSize="15"
+            HorizontalTextAlignment="Center"
+            HorizontalOptions="Center" />
+
+        <Button 
+            Text="Retry"
+            WidthRequest="100"
+            BackgroundColor="#dccdbd"
+            HorizontalOptions="Center" />
+
+        <Button
+            Text="Exit"
+            WidthRequest="100"
+            BackgroundColor="#804b2d"
+            HorizontalOptions="Center" />
+    </VerticalStackLayout>
+</ContentPage>

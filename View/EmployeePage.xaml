@@ -1,0 +1,45 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Module02Exercise01.View.EmployeePage"
+             Title="Employee View App"
+             BackgroundColor="#eeeeea">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="10">
+            <Label 
+                Text="{Binding FullName}"
+                FontSize="Header"
+                FontAttributes="Bold"
+                HorizontalOptions="Center" />
+
+            <Label
+                Text="Manager of the IT Department"
+                FontSize="Caption"
+                HorizontalOptions="Center" />
+
+            <Button Text="Show manager"
+                Command="{Binding LoadEmployeeDataCommand}" />
+
+            <ListView ItemsSource="{Binding Employees}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Frame BorderColor="Black" CornerRadius="5" Padding="10" Margin="5">
+                                <StackLayout>
+                                    <Label Text="{Binding FullName}"
+                                           FontSize="10"
+                                           FontAttributes="Bold"/>
+                                    <Label Text="{Binding Position}"
+                                           FontSize="10"
+                                           FontAttributes="Italic"
+                                           TextColor="Gray" />
+                                </StackLayout>
+                            </Frame>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
