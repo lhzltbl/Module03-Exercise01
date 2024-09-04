@@ -17,6 +17,7 @@
             WidthRequest="250"/>
 
         <Entry
+            IsPassword="True"
             Placeholder="Enter password"
             WidthRequest="250" />
 

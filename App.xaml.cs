@@ -5,9 +5,9 @@ namespace Module02Exercise01
 {
     public partial class App : Application
     {
-        //for offline page: reqbin
+        //for offline page: reqbinz
         //for online page: facebook
-        private const string TestUrl = "https://reqbin.com/";
+        private const string TestUrl = "https://facebook.com/";
         public App()
         {
             InitializeComponent();
